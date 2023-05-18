@@ -16,7 +16,6 @@ use tokio::{fs, io::AsyncWriteExt, time};
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    env_logger::init();
     let mut args = env::args().skip(1);
 
     let subcommand = args
